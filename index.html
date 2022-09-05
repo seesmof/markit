@@ -26,89 +26,81 @@
 
     <!-- styles -->
     <style>
+        :root {
+            --main: #5f3afc;
+        }
 
+        #home {
+            height: calc(100vh - 78px);
+        }
     </style>
 
 </head>
 
-<body data-theme="dark">
+<body data-theme="light">
 
     <!-- navbar start -->
-    <div class="navbar bg-base-200 p-5 sticky top-0 flex justify-between">
+    <div class="navbar bg-base-100 p-6 sticky top-0 shadow-lg">
 
-        <!-- navbar left start -->
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li>
-                        <a href="https://github.com/seesmof/fcc-balance-sheet" class="nav-link">
-                            <i class="fas fa-folder-open"></i> Project's Page
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/seesmof?tab=repositories" class="nav-link">
-                            <i class="fas fa-folder-tree"></i> Other Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/seesmof" class="nav-link">
-                            <i class="fa-brands fa-github"></i> Github Page
-                        </a>
-                    </li>
+        <!-- flex container start -->
+        <div class="container flex justify-between w-4/5 mx-auto">
 
-                    <div class="divider my-0"></div>
-
-                    <li><a href="#home-section">
-                            <i class="fa-solid fa-house"></i> Home
-                        </a></li>
-                    <li><a href="#about-section">
-                            <i class="fa-solid fa-circle-info"></i> About Us
-                        </a></li>
-                    <li><a href="#contact-section">
-                            <i class="fa-solid fa-address-book"></i> Contact
-                        </a></li>
-                    <li><a href="#shop-section">
-                            <i class="fa-solid fa-shopping-bag"></i> Shop
-                        </a></li>
-                    <li><a href="#donate-section">
-                            <i class="fa-solid fa-circle-dollar-to-slot"></i> Donate
-                        </a></li>
-                </ul>
+            <!-- logo start -->
+            <div class="logo pl-7 pr-20">
+                <img src="./images/logo.png" alt="Markit Logo">
             </div>
-        </div>
-        <!-- navbar left end -->
+            <!-- logo end -->
 
-        <!-- navbar center start -->
-        <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl" href="./index.html">
-                <i class="fas fa-code text-3xl"></i>
-            </a>
-        </div>
-        <!-- navbar center end -->
+            <!-- navbar start -->
+            <ul class="flex flex-row gap-7 mr-auto">
+                <li><a href="#" class="text-[#5f3afc]">
+                        Home <i class="fas fa-angle-down fa-xs"></i>
+                    </a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">
+                        Themes <i class="fas fa-angle-down fa-xs"></i>
+                    </a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">HTML</a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">Support</a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">
+                        Pages <i class="fas fa-angle-down fa-xs"></i>
+                    </a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">
+                        Blog <i class="fas fa-angle-down fa-xs"></i>
+                    </a></li>
+                <li><a href="#" class="hover:text-[#5f3afc] transition-all duration-300">Contact</a></li>
 
-        <!-- navbar right start -->
-        <div class="navbar-end gap-2">
-            <a href="https://github.com/seesmof" class="btn btn-ghost btn-circle">
-                <i class="fa-brands fa-github fa-xl"></i>
-            </a>
-            <a href="https://t.me/seesmof" class="btn btn-ghost btn-circle">
-                <i class="fa-brands fa-telegram fa-xl"></i>
-            </a>
-            <a href="mailto:seesmwork@gmail.com" class="btn btn-ghost btn-circle">
-                <i class="fa-solid fa-envelope fa-xl"></i>
-            </a>
+            </ul>
+            <!-- navbar end -->
+
+            <!-- login start -->
+            <div class="flex flex-row items-center">
+                <div class="border-r-2 rounded-sm pr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                    Log In
+                </div>
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 ml-3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                    <div class="badge badge-md bg-[#5f3afc] absolute -top-2 left-8 p-2">0</div>
+                </div>
+            </div>
+            <!-- login end -->
+
         </div>
-        <!-- navbar right end -->
+        <!-- flex container end -->
 
     </div>
     <!-- navbar end -->
 
     <!-- main section start -->
-    <section>
+    <section id="home">
 
         <div class="container mx-auto">
 
@@ -118,15 +110,6 @@
 
     </section>
     <!-- main section end -->
-
-    <!-- footer start -->
-    <footer class="footer footer-center bg-base-200 p-4">
-        <div>
-            <p>Copyright © 2022 - <a href="https://github.com/seesmof"
-                    class="hover:text-gray-500 transition-all">seesmof</a>
-            </p>
-        </div>
-    </footer>
 
 </body>
 
