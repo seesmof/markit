@@ -28,6 +28,7 @@
     <style>
         :root {
             --main: #5f3afc;
+            --heroBack: #eeedf2;
         }
 
         #home {
@@ -40,13 +41,13 @@
 <body data-theme="light">
 
     <!-- navbar start -->
-    <div class="navbar bg-base-100 p-6 sticky top-0 shadow-lg">
+    <div class="navbar bg-base-100 sticky top-0 shadow-lg">
 
         <!-- flex container start -->
-        <div class="container flex justify-between w-4/5 mx-auto">
+        <div class="container flex justify-between p-6 w-4/5 mx-auto">
 
             <!-- logo start -->
-            <div class="logo pl-7 pr-20">
+            <div class="logo pr-20">
                 <img src="./images/logo.png" alt="Markit Logo">
             </div>
             <!-- logo end -->
@@ -100,13 +101,56 @@
     <!-- navbar end -->
 
     <!-- main section start -->
-    <section id="home">
+    <section id="home" class="bg-[#eeedf2] flex items-center justify-between">
 
-        <div class="container mx-auto">
+        <!-- grid container start -->
+        <div class="container mx-auto w-4/5 p-6 grid grid-flow-row grid-cols-2 grid-rows-1">
 
+            <div class="col-span-1 mt-10">
+                <h1 class="font-normal text-black text-6xl leading-tight">The world's largest <span
+                        class="font-bold">WordPress
+                        Theme
+                        Collection.</span></h1>
+                <p class="text-gray-500 text-md pt-3 pb-10 pr-52">The bee's knees pardon you plastered it's
+                    all gone to
+                    pot
+                    cheeky
+                    bugger
+                    wind up
+                    down.
+                </p>
 
+                <form class="w-4/5 flex flex-row gap-5">
+                    <div class="relative">
+                        <input type="text"
+                            class="form-control border-none rounded placeholder:text-gray-400 p-5 pl-11 w-[23rem] transition focus:shadow-lg"
+                            placeholder="Search for templates">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 absolute text-gray-400 top-5 left-3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </div>
+
+                    <input type="submit"
+                        class="bg-[#5f3afc] border-none normal-case text-xl p-3 rounded text-white px-7 cursor-pointer transition hover:shadow-lg"
+                        value="Search">
+                </form>
+            </div>
+
+            <div class="col-span-1 flex flex-row gap-7 items-center">
+                <div class="">
+                    <img src="./images/hero-1.jpg" class="w-96">
+                </div>
+                <div class="">
+                    <img src="./images/hero-2.jpg" class="w-72">
+                    <img src="./images/hero-3.jpg" class="pt-7">
+                </div>
+            </div>
 
         </div>
+        <!-- grid container end -->
 
     </section>
     <!-- main section end -->
