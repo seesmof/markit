@@ -34,16 +34,6 @@
         #home {
             height: calc(100vh - 78px);
         }
-
-        .bg-banner-1 {
-            background-image: url(./images/banner-1.jpg);
-            background-repeat: no-repeat;
-        }
-
-        .bg-banner-2 {
-            background-image: url(./images/banner-2.jpg);
-            background-repeat: no-repeat;
-        }
     </style>
 
 </head>
@@ -620,9 +610,9 @@
             <!-- brands section end -->
 
             <!-- cards container start -->
-            <div class="flex flex-row gap-5">
+            <div class="flex flex-row gap-10">
 
-                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7">
+                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7 py-12">
                     <div class="flex flex-row justify-start items-start">
                         <img src="./images/testi-1.jpg" class="rounded-full mr-4">
 
@@ -638,7 +628,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7">
+                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7 py-12">
                     <div class="flex flex-row justify-start items-start">
                         <img src="./images/testi-2.jpg" class="rounded-full mr-4">
 
@@ -654,7 +644,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7">
+                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7 py-12">
                     <div class="flex flex-row justify-start items-start">
                         <img src="./images/testi-3.jpg" class="rounded-full mr-4">
 
@@ -670,7 +660,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7">
+                <div class="bg-white rounded-xl shadow-2xl w-1/4 h-full p-7 py-12">
                     <div class="flex flex-row justify-start items-start">
                         <img src="./images/testi-4.jpg" class="rounded-full mr-4">
 
@@ -690,29 +680,34 @@
             <!-- cards container end -->
 
             <!-- colorful container start -->
-            <div class="flex flex-row my-24 justify-around items-center">
-                <div class="bg-banner-1 flex items-center p-10 bg-contain rounded-xl">
-                    <div class="pr-[16rem]">
+            <div class="w-full my-24 grid grid-rows-1 grid-cols-2 gap-6">
+                <div class="bg-[url('/images/banner-1.jpg')] bg-no-repeat bg-cover p-10 rounded-xl">
+                    <div class="w-2/3">
                         <h2 class="font-bold text-white text-2xl">
                             Designers who changed the web with Markit
                         </h2>
-                        <p class="text-gray-100">He lost his bottle that zonked spend a penny young delinquent
+                        <p class="text-gray-100 py-5">He lost his bottle that zonked spend a penny young delinquent
                             bugger
                         </p>
-
-                        <button class="bg-white text-black shadow-sm rounded">Learn More</button>
                     </div>
+
+                    <button
+                        class="bg-white text-black shadow-sm rounded px-5 py-2 hover:-translate-y-1 transition hover:shadow-2xl">Learn
+                        More</button>
                 </div>
-                <div class="bg-banner-2 flex items-center p-10 bg-contain rounded-xl">
-                    <div class="pr-[10rem]">
+
+                <div class="bg-[url('/images/banner-2.jpg')] bg-no-repeat bg-cover p-10 rounded-xl">
+                    <div class="w-2/3">
                         <h2 class="font-bold text-white text-2xl">
                             Professional Websites are made by Markit </h2>
-                        <p class="text-gray-100">He lost his bottle that zonked spend a penny young delinquent
+                        <p class="text-gray-100 py-5">He lost his bottle that zonked spend a penny young delinquent
                             bugger
                         </p>
-
-                        <button class="bg-white text-black shadow-sm rounded">Learn More</button>
                     </div>
+
+                    <button
+                        class="bg-white text-black shadow-sm rounded px-5 py-2 hover:-translate-y-1 transition hover:shadow-2xl">Learn
+                        More</button>
                 </div>
             </div>
             <!-- colorful container end -->
